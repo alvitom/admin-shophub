@@ -1,1 +1,1 @@
-export const base_url = "https://api-shophub.vercel.app/api"
+export const base_url = process.env.BASE_URL;
