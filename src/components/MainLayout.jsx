@@ -160,7 +160,7 @@ const MainLayout = () => {
                 <img src="/images/Shophub-icon.png" alt="" className="img-fluid" />
               </div>
               <div className="admin-details d-flex flex-column gap-1">
-                <p className="name">{user?.firstname + " " + user?.lastname}</p>
+                <p className="name">{user.firstname + " " + user.lastname}</p>
                 <p className="email">{user.email}</p>
               </div>
             </div>
