@@ -9,4 +9,5 @@ import blogCategoryReducer from "../features/blog-category/bcategorySlice";
 
 export const store = configureStore({
   reducer: { auth: authReducer, customer: customerReducer, product: productReducer, brand: brandReducer, productCategory: productCategoryReducer, blog: blogReducer, blogCategory: blogCategoryReducer },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware({ serializableCheck: false })
 });
