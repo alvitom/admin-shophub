@@ -18,6 +18,9 @@ const MainLayout = () => {
   } = theme.useToken();
   const navigate = useNavigate();
   const user = useSelector((state) => state.auth.user);
+  if (!user) {
+    location.href = "/login";
+  }
   return (
     <Layout>
       <Sider trigger={null} collapsible collapsed={collapsed}>
